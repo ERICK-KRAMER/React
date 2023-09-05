@@ -1,0 +1,22 @@
+@media (max-width: 1300px) {
+    wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .Animation_home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 800px;
+        padding-top: 15%;
+    }
+    .wrapper-text{
+        text-align: center;
+        text-justify: auto;
+    }
+    
+    
+}
