@@ -2,3 +2,9 @@ header{
     background-color: rgb(16, 192, 169);
     color: #ffff;
 }
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
