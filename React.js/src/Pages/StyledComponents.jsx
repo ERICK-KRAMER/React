@@ -6,4 +6,4 @@ const StyledComponents = () => {
   )
 }
 
-export default StyledComponents
+export default StyledComponents;
