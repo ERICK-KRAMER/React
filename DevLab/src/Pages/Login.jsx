@@ -22,7 +22,7 @@ const Login = () => {
 
             <div className="Input" style={{width: "370px", padding: "0 10px"}} >
                 <label htmlFor="iemail"></label>
-                <InputName type="email" placeholder="Email" autoComplete="on"/>
+                <InputName type="email" placeholder="Usuario ou Email" autoComplete="on"/>
             </div>
 
             <div className="Input" style={{width: "370px", padding: "0 10px"}} >
