@@ -67,10 +67,14 @@ function FormCad() {
 
         </div>
         <div className="btn">
-            <Button style={{width:"100%", height:"40px", fontSize: "1.3rem"}}>Criar conta</Button>
+            <Button style={{width:"100%", height:"40px", fontSize: "1.3rem"}}>
+                Criar conta
+            </Button>
         </div>
         <div className="back" style={{display: 'flex', justifyContent: "center", padding: "5px 0 0 0 ",}}>
-            <Link to="/login">Já possui login ?</Link>
+            <Link to="/login">
+                Já possui login ?
+            </Link>
         </div>
     </Form>
     </>    

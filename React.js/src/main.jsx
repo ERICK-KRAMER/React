@@ -4,7 +4,7 @@ import App from './App.jsx'
 
 import "../src/Styles/StyleG.css";
 
-import { createBrowserRouter, RouterProvider, Router} from "react-router-dom";
+import { createBrowserRouter, RouterProvider,} from "react-router-dom";
 
 //  PAGINAS 
 import Home from "../src/Pages/Home.jsx";
