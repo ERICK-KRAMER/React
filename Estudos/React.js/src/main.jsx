@@ -12,6 +12,7 @@ import StyledComponents from "../src/Pages/StyledComponents.jsx";
 import ReactIcons from './Pages/ReactIcons.jsx';
 import Hooks from './Pages/Hooks.jsx';
 import Apis from './Pages/Apis.jsx';
+import Login from './Pages/login.jsx';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/Apis",
         element: <Apis />
+      },
+      {
+        path: "/login",
+        element: <Login />
       }
     ]
   }

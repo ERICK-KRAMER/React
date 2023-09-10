@@ -21,6 +21,7 @@ const Cep = () => {
   const handleButtonClick = () => {
     if (cepInput.trim() !== '') {
       getCep();
+      setCepInput('');
     }
   };
 
