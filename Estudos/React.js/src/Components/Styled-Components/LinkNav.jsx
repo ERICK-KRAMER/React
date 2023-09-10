@@ -14,6 +14,6 @@ font-weight: 500;
 width: 130px;
 height: 45px;
 color: #1b17f7ce;
-background-color: ${(Props) => Props.backGroundColor ? Props.backGroundColor : "lightgray"}
+background-color: ${(Props) => Props.backgroundColor ? Props.backgroundColor : "lightgray"}
 `
 export default LinkStyled;
