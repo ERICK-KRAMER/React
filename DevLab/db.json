@@ -1,0 +1,32 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "name": "Erick",
+      "username": "Erimer",
+      "email": "kramerfilho@hotmail.com",
+      "password": "teste123"
+    },
+    {
+      "id": 2,
+      "name": "Alef",
+      "username": "Capolinario",
+      "email": "estudoapi123@testeemail.com",
+      "password": "teste369"
+    },
+    {
+      "id": 3,
+      "name": "Vinicius",
+      "username": "Galdino",
+      "email": "testeapi789@exemploemail.com",
+      "password": "teste246"
+    },
+    {
+      "id": 4,
+      "name": "João",
+      "username": "Seucu",
+      "email": "exemploapi456@testeemail.com",
+      "password": "teste48"
+    }
+  ]
+}

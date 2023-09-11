@@ -1,4 +1,3 @@
-
 import Nav_bar from "../Components/Nav_bar";
 import Div from "../Components/BodyStyled";
 import Svg from "../Components/Animation_Home";
@@ -52,4 +51,3 @@ const Home = () => {
     );
 };
 export default Home;
-

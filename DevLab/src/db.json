@@ -1,0 +1,28 @@
+{
+    "usuarios": [
+        {
+            "name": "Erick",
+            "username": "Erimer",
+            "email": "kramerfilho@hotmail.com",
+            "password": "teste123"
+         },
+         {
+            "name": "Alef",
+            "username": "Capolinario",
+            "email": "estudoapi123@testeemail.com",
+            "password": "teste369"
+         },
+         {
+            "name": "Vinicius",
+            "username": "Galdino",
+            "email": "testeapi789@exemploemail.com",
+            "password": "teste246"
+         },
+         {
+            "name": "João",
+            "username": "Seucu",
+            "email": "exemploapi456@testeemail.com",
+            "password": "teste48"
+         }
+    ]
+}

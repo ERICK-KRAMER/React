@@ -5,9 +5,27 @@ import InputName from "../Components/InputName";
 import Div from "../Components/BodyStyled"
 import Nav_bar from "../Components/Nav_bar";
 import { BiCodeAlt } from "react-icons/bi"
+import { useEffect } from "react";
+import axios from 'axios'
+
 
 
 const Login = () => {
+
+    const getUser = async () =>{
+        try {
+            const responser = await axios.get('http://localhost:3000/usuarios')
+            console.log(responser.data)
+        } catch (error) {
+            console.log()
+        }
+    };
+
+    useEffect(() => {
+        getUser();
+    });
+
+
     return(
         <>
         <Nav_bar />
@@ -34,10 +52,6 @@ const Login = () => {
                 <Button type="submit" style={{width: "100%", height: "40px"}}>Entrar</Button>
             </div>
 
-            {/* <div className="remember">
-                <input type="checkbox" name="remember" id="iremember" />
-                <label htmlFor="iremember" style={{color: "black"}}> Manterme conectado</label>
-            </div> */}
 
             <Link to="/" style={{textDecoration: "none", color: "#1877F2", }}>Esqueceu a senha?</Link>
 
