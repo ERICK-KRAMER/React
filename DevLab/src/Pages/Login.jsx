@@ -18,23 +18,6 @@ const Login = () => {
     const [password, setPassword] = useState('');
     const [erroLogin, setErrorLogin] = useState('');
 
-    useEffect(() => {
-        getUser();
-    }, []);
-
-    const handleEmail = (e) => {
-        setEmail(e.target.value);
-    };
-
-    const handlePassword = (e) => {
-        setPassword(e.target.value);
-    };
-
-    const handleClick = (e) => {
-        e.preventDefault();
-        getUser();
-    };
-
     const getUser = async () => {
         try {
             const response = await axios.get('http://localhost:3000/usuarios');
@@ -57,10 +40,26 @@ const Login = () => {
         }
     };
 
+    useEffect(() => {
+        getUser();
+    }, []);
+
+    const handleEmail = (e) => {
+        setEmail(e.target.value);
+    };
+
+    const handlePassword = (e) => {
+        setPassword(e.target.value);
+    };
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        getUser();
+    };
+
     return (
         <>
             <Nav_bar />
-
             <Div>
                 <H1>Login</H1>
                 <Form action="#" method="post">
