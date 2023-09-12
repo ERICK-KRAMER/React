@@ -8,6 +8,8 @@ outline: none;
 border-radius: 4px;
 color: #ffff;
 background-color: #4360FF;
+width: 50%;
+height: 40px;
 
 &:active{
     background-color: #364ccc;
