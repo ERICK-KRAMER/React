@@ -51,6 +51,8 @@ const Login = () => {
     const handleClick = (e) => {
         e.preventDefault();
         getUser();
+        setEmail('');
+        setPassword('');
     };
 
     return (
@@ -96,9 +98,11 @@ const Login = () => {
 
                 <hr style={{ width: "330px", height: "1px" }} />
 
+                <Link to="/Create_Accout" style={{width: "450px", paddingLeft: "150px"}}>
                 <Button 
                 >Criar Uma Conta
                 </Button>
+                </Link>
 
             </Form>
         </Div>

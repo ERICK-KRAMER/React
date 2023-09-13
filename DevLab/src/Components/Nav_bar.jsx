@@ -1,10 +1,18 @@
-
+import { useState } from "react";
 import { styled } from "styled-components";
 import { Link } from "react-router-dom";
 import Logo from "./LogoStyle";
-
+import Modal from "./modal/Modal";
 
 const Nav_bar = () => {
+
+    const [openModal, steOpenModal] = useState(false);
+
+    function handleClick() {
+        steOpenModal(!openModal)
+    };
+    
+
     return(
 
         <Nav>
@@ -28,9 +36,10 @@ const Nav_bar = () => {
 
                 <Div>
                     <Link 
-                    to="/Login" 
+                    onClick={handleClick}
                     style={{textDecoration: "none", fontSize: "1.2rem", color: "black"}}>Login
                     </Link>
+                    <div>{openModal && <Modal />}</div>
                 </Div>
 
             </ul>

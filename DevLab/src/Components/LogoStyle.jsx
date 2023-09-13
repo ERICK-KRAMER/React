@@ -3,7 +3,7 @@ import { BiCodeAlt } from "react-icons/bi"
 
 
 const Logo = styled(BiCodeAlt)`
-width: 50px;
-height: 50px;
+width: 60px;
+height: 60px;
 `
 export default Logo;
