@@ -1,4 +1,3 @@
-
 // Hooks & Api
 import { useEffect, useState } from "react";
 import axios from 'axios';
@@ -12,8 +11,8 @@ import Div from "../Components/BodyStyled";
 import Nav_bar from "../Components/Nav_bar";
 import Form from "../Components/form";
 
-
 const Login = () => {
+
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [erroLogin, setErrorLogin] = useState('');
@@ -27,7 +26,7 @@ const Login = () => {
 
             if (user) {
                 console.log("tudo certo!");
-                setErrorLogin(null);
+                setErrorLogin('');
             }
             else {
                 setErrorLogin('Erro ao fazer login');
@@ -35,17 +34,14 @@ const Login = () => {
             }
 
         } catch (error) {
-            console.log(error);
             setErrorLogin('Erro ao fazer login');
+            console.log(setErrorLogin, error);
         }
     };
 
-    useEffect(() => {
-        getUser();
-    }, []);
-
     const handleEmail = (e) => {
         setEmail(e.target.value);
+        setErrorLogin('')
     };
 
     const handlePassword = (e) => {
@@ -59,48 +55,53 @@ const Login = () => {
 
     return (
         <>
-            <Nav_bar />
-            <Div>
-                <H1>Login</H1>
-                <Form action="#" method="post">
+        <Nav_bar />
+        <Div>
+            <H1>Login</H1>
+            <Form action="#" method="post">
 
-                    <label htmlFor={email}></label>
-                    <InputName 
-                    type="email" 
-                    placeholder="Usuario ou Email" 
-                    autoComplete="on" 
-                    value={email} 
-                    onChange={handleEmail} />
+                <label htmlFor={email}></label>
+                <InputName 
+                type="email" 
+                placeholder="Usuario ou Email" 
+                autoComplete="on" 
+                value={email} 
+                onChange={handleEmail} />
 
-                    <label htmlFor={password}></label>
-                    <InputName 
-                    type="password" 
-                    placeholder="Password" 
-                    value={password} 
-                    onChange={handlePassword} />
+                <label htmlFor={password}></label>
+                <InputName 
+                type="password" 
+                placeholder="Password" 
+                value={password} 
+                onChange={handlePassword} />
 
-                    <Button 
-                    type="submit" 
-                    style={{ width: "100%", height: "40px" }} 
-                    onClick={handleClick}
-                    >Entrar
-                    </Button>
+                <Button 
+                type="submit" 
+                style={{ width: "100%", height: "40px" }} 
+                onClick={handleClick}
+                >Entrar
+                </Button>
 
-                    <Link 
-                    to="/" 
-                    style={{ textDecoration: "none", color: "#1877F2" }}
-                    >Esqueceu a senha?
-                    </Link>
+                {erroLogin && (
+                    <small style={{color:"red", textAlign:"start",width:"98%"}}
+                      >{erroLogin}
+                    </small>
+                )};
 
-                    <hr style={{ width: "330px", height: "1px" }} />
+                <Link 
+                to="/" 
+                style={{ textDecoration: "none", color: "#1877F2" }}
+                >Esqueceu a senha?
+                </Link>
 
-                    <Button 
-                    onClick={handleClick}
-                    >Criar Uma Conta
-                    </Button>
+                <hr style={{ width: "330px", height: "1px" }} />
 
-                </Form>
-            </Div>
+                <Button 
+                >Criar Uma Conta
+                </Button>
+
+            </Form>
+        </Div>
         </>
     );
 };

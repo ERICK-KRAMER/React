@@ -6,28 +6,36 @@ import Logo from "./LogoStyle";
 
 const Nav_bar = () => {
     return(
-        <>
+
         <Nav>
             
-            <h1 style={{padding:"3rem", display: "flex", justifyContent:"center",alignItems:"center", gap: ".5rem"}}><Logo style={{color: "#4360FF"}}/><span>DevLab</span></h1>
-                
-                <div className="links">
+            <h1 
+            style={{padding:"3rem", display: "flex",alignItems:"center",}}>
+                <Logo style={{color: "#4360FF"}}/>
+                <span>DevLab</span>
+            </h1>    
+            
+            <ul 
+            style={{listStyle: "none", display: "flex", gap: "1.5rem", padding: "0 3rem", textDecoration: "none"}}>
 
-                    <ul style={{listStyle: "none", display: "flex", gap: "1.5rem", padding: "0 3rem", textDecoration: "none"}}>
+                <Div>
+                    <Link 
+                    to="/" 
+                    style={{textDecoration: "none", fontSize: "1.2rem", color: "black", fontWeight: "500" }}
+                    >Home
+                    </Link>
+                </Div>
 
-                        <Div>
-                            <li><Link to="/" style={{textDecoration: "none", fontSize: "1.2rem", color: "black", fontWeight: "500" }}>Home</Link></li>
-                        </Div>
+                <Div>
+                    <Link 
+                    to="/Login" 
+                    style={{textDecoration: "none", fontSize: "1.2rem", color: "black"}}>Login
+                    </Link>
+                </Div>
 
-                        <Div>
-                            <li><Link to="/Login" style={{textDecoration: "none", fontSize: "1.2rem", color: "black", fontWeight: "500" }}>Login</Link></li>
-                        </Div>
-    
-                    </ul>
-                
-                </div>
+            </ul>
+            
         </Nav>
-        </>
     );
 };
 
@@ -47,9 +55,5 @@ width: 70px;
 height: 30px;
 text-align:center;
 padding: 4px;
-border-radius: 5px;
-border: 1px solid #000000;
-&:active {
-    border: 1px solid #0076C6;
-}
+border-bottom: 1px solid #0076C6;
 `

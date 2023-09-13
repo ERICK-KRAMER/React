@@ -25,7 +25,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction:column;
-
   button{
     width:130px;
     height:36px;

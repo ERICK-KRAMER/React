@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Cep from '../Components/api/Cep';
+import Github from '../Components/api/Github';
 
 const Apis = () => {
   const [list, setList] = useState([]);
@@ -11,7 +12,7 @@ const Apis = () => {
       // console.log(response.data);
       setList(response.data);
     } catch (error) {
-      console.log(error);
+      console.log(error.mensage);
     }
   };
 
@@ -30,9 +31,10 @@ const Apis = () => {
           </div>
         ))
       )}
-      <div style={{display:'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: "#e2dfdf", textAlign:'center', fontWeight:"500", fontSize:"1.3em", padding:"1rem", flexDirection:"column"}}>
+      <div style={{display:'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: "#e2dfdf", textAlign:'center', fontWeight:"500", fontSize:"1.3em", padding:"1rem", flexDirection:"column",color:"black"}}>
         <Cep />
       </div>
+      <Github />
     </>
   );
 };

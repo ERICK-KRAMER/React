@@ -1,7 +1,7 @@
 import React from 'react';
 import { RiCloseFill } from 'react-icons/ri';
 
-function Modal({ isOpen, children, setModalOpen }) { // Correção: Renomeado "childeren" para "children"
+function Modal({ isOpen, children, setModalOpen }) { 
   if (isOpen) {
     return (
       <div style={CONTAINER}>
