@@ -10,7 +10,7 @@ const login = () => {
   return (
     <Body>
       <div>
-        <h1>Front Beginings</h1>
+        <h1>Erick Kramer</h1>
       </div>
       <button onClick={() => setOpenModal(true)}>Abrir Modal</button>
       <Modal isOpen={openModal} setModalOpen={()=> setOpenModal(!openModal)}>
