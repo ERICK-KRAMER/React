@@ -15,7 +15,7 @@ const Nav_bar = () => {
 
     return(
 
-        <Nav>
+        <Nav >
             
             <h1 
             style={{padding:"3rem", display: "flex",alignItems:"center",}}>
