@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Cep from '../Components/api/Cep';
 import Github from '../Components/api/Github';
+import Nasa from '../Components/api/Nasa';
 
 const Apis = () => {
   const [list, setList] = useState([]);
@@ -35,6 +36,7 @@ const Apis = () => {
         <Cep />
       </div>
       <Github />
+      <Nasa />
     </>
   );
 };

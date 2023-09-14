@@ -1,0 +1,41 @@
+.constainer_box_Github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    
+}
+.input_name_username {
+ width: 420px;
+ height: 40px;
+ border: none;
+ border-radius: 6px 0 0 6px;
+ outline: none;
+ padding: 1rem;
+ font-size: 1rem;
+ font-weight: 700;
+}
+.btn_input {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 0  6px  6px 0;
+    background-color: rgb(143, 59, 221);
+}
+.btn_input:hover {
+background-color: rgb(140, 32, 241);
+}
+.wrapper_user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ul {
+    list-style: lower-roman;
+    font-size: 2rem;
+}
+img {
+    border-radius: 50%;
+}
